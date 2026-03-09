@@ -1,0 +1,72 @@
+
+    .heading{
+        margin-top: 70px;
+        text-align: center;
+        color: black;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    .card-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 60vh;
+        margin-top: 50px;
+    }
+    
+    .password-card {
+        background-color: white;
+        padding: 40px;
+        max-width: 450px;
+        width: 100%;
+        font-family: 'Courier New', 'Monaco', 'Consolas', monospace;
+    }
+    
+    .password-card h2 {
+        color: #333;
+        margin-bottom: 25px;
+        text-align: center;
+        font-weight: 600;
+    }
+    
+    .password-input-group {
+        margin-bottom: 30px;
+    }
+    
+    .password-input-group label {
+        display: block;
+        margin-bottom: 10px;
+        color: #555;
+        font-weight: 500;
+    }
+    
+    .password-input-group input {
+        width: 100%;
+        padding: 12px 15px;
+        border: 2px solid #ddd;
+        font-size: 16px;
+    }
+    
+    .password-input-group input:focus {
+        outline: none;
+        border-color: #7c3aed;
+    }
+    
+    .strength-feedback {
+        background-color: #f8f9fa;
+        border-left: 5px solid #ddd;
+        padding: 20px;
+        min-height: 100px;
+    }
+    
+    .strength-feedback h4 {
+        color: #333;
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+    
+    .strength-feedback p {
+        color: #666;
+        margin: 0;
+        line-height: 1.6;
+    }
+    
