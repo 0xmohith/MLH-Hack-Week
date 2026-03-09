@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</head>
+
+</style>
+<body>
+    <section class="heading">
+        <h1>CHECK YOUR PASSWORD STRENGTH NOW..!</h1>
+    </section>
+    
+    <section class="card-container">
+        <div class="password-card">
+            <h2>Password Strength Checker</h2>
+            
+            <div class="password-input-group">
+                <label for="passwordInput">Enter your password:</label>
+                <input type="password" id="passwordInput" placeholder="Type your password here...">
+            </div>
+            
+            <button id="checkBtn" class="btn btn-dark w-100" style="margin-bottom: 20px;">Check</button>
+            
+            <div class="strength-feedback">
+                <h4>Strength:</h4>
+                <p id="strengthComment">Analyze now</p>
+            </div>
+        </div>
+    </section>
+    <script src="./logic.js"></script>
+</body>
+
+
+
+</html>
