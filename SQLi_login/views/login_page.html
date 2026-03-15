@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <form action="/login" method="post" style="text-align: center;">
+            <h1>LOGIN</h1>
+            <div class="form-group">
+                <input id="login_usr" type="text" name="user11" placeholder="Username">
+            </div>
+
+            <br style="padding-top: 10;">
+
+            <div class="form-group">
+                <input id="login_pwd" type="text" name="password11" placeholder="Password">
+            </div>
+            <div>
+                <button type="submit" class="btn">Submit</button>
+            </div>
+        </form>
+    </div>
+
+   <script>
+    const user11 = document.getElementById('login_usr');
+    const password11 = document.getElementById('login_pwd');
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        console.log([...data]);
+        fetch('/login', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                user: user11.value,
+                password: password.value
+            })
+        }).then(res => res.json())
+          .then(data => console.log(data))
+          .catch(err => console.error(err));
+    });
+   </script>
+
+</body>
+</html>
