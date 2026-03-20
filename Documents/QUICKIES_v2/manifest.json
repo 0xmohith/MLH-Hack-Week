@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "QUICKIES",
+  "version": "2.0",
+  "description": "Quick notes with tab UI and export feature.",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": ["storage"]
+}

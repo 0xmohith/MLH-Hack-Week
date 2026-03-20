@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Quickies</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h2>Quickies</h2>
+      <button id="addBtn">➕</button>
+    </div>
+
+    <div id="notesList"></div>
+
+    <div id="noteEditor" class="hidden">
+      <input type="text" id="noteTitle" placeholder="Title">
+      <textarea id="noteContent" placeholder="Write note..."></textarea>
+      <button id="saveNote">Save</button>
+    </div>
+
+    <button id="exportBtn">Export</button>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
